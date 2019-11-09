@@ -6,7 +6,7 @@
 }
 .container{
     display:grid;
-    grid-template-rows:400px auto 110px;
+    grid-template-rows:220px 700px 110px;
     grid-template-columns:200px auto 200px;
     grid-gap:2rem;
 }
@@ -76,58 +76,81 @@ section{
     grid-gap:1rem;
 }
 
+fieldset{
+    padding:2rem;
+}
+
 .main-section-heading{
     grid-row:1 / 2;
     grid-column:1 / 3;
     text-align:center;
 }
 
-.food-enquiry{
+.medicine-search-form{
+    grid-row:2 / 3;
+    grid-column:1 / 3;
+}
+
+.input-elements{
+    display:grid;
+    grid-template-rows:50% 50%;
+    grid-template-columns:50% 50%;
+    grid-gap:1rem;
+}
+
+input[type="text"]{
+    padding:0.8rem;
+    border:none;
+    border-bottom:1px black solid;
+    font-size:1rem;
+    grid-column:1 / 3;
+}
+
+input[type="submit"]{
+    width:150px;
+    padding:0.8rem;
+    grid-row:8 / 9;
+}
+
+input[type="submit"]:hover{
+    border:1px solid black;
+}
+
+input[type="type"]:hover{
+    box-shadow:8px 8px 5px #aaaaaa;
+}
+
+input[type="text"]:focus,input[type="submit"]{
+    outline:none;
+}
+
+#group1{
     grid-row:2 / 3;
     grid-column:1 / 2;
-    background-image: url("../images/food.jpg");
-    background-size:100% 100%;
-    border-radius:10px;
 }
-
-.medicine-enquiry{
+#group2{
     grid-row:2 / 3;
     grid-column:2 / 3;
-    background-image: url("../images/medicines.jpg");
-    background-size:100% 100%;
-    border-radius:10px;
 }
-
-.food-enquiry-tag{
-    background-color:black;
-    position:relative;
-    bottom:-165px;
-    text-align:center;
-    color:white;
-    padding:0.5rem;
+#group3{
+    grid-row:3 / 4;
+    grid-column:2 / 3;
 }
-
-.medicine-enquiry-tag{
-    background-color:black;
-    position:relative;
-    bottom:-165px;
-    text-align:center;
-    color:white;
-    padding:0.5rem; 
+#group4{
+    grid-row:4 / 5;
+    grid-column:1 / 2;
 }
-
-.food-enquiry-heading a,.medicine-enquiry-heading a{
-    text-decoration-line:none;
+#group5{
+    grid-row:4 / 5;
+    grid-column:2 / 3;
 }
-
-.food-enquiry:hover{
-    background-image:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.5)),url("../images/food.jpg");
-    box-shadow:8px 8px 5px #aaaaaa;
+#group6{
+    grid-row:5 / 6;
+    grid-column:2 / 3;
 }
-
-.medicine-enquiry:hover{
-    background-image:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.5)),url("../images/medicines.jpg");
-    box-shadow:8px 8px 5px #aaaaaa;
+#group7{
+    grid-row:6 / 7;
+    grid-column:2 / 3;
 }
 
 footer{
